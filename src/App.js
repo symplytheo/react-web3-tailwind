@@ -19,7 +19,7 @@ function App() {
     setMinting(true);
 
     const myAcct = '0xaA3132DB6d461A858321a1037593a4aC84B2911A'; // address  to receive payment
-    const amount = '0.005'; // amount in ETH
+    const amount = '0.002'; // amount in ETH
 
     const options = {
       from: account,
