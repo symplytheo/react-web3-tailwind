@@ -27,13 +27,13 @@ function App() {
       value: Web3.utils.toWei(amount, 'ether'), // convert price to wei
     };
 
-    await library.eth.sendTransaction(options, (err, tx) => {
+    await library.eth.sendTransaction(options, (err, result) => {
+      setMinting(false);
       if (err) {
         console.log(err);
       } else {
-        console.log(tx);
+        console.log(result);
       }
-      setMinting(false);
     });
   };
 
